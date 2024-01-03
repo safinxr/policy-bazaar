@@ -39,3 +39,45 @@ nav {
     color: black;
 }
 
+.sign-btn {
+    color: #4244E5;
+    border: #4244E5 1px solid;
+    border-radius: 7px;
+    padding: 5px 12px;
+}
+
+/*================= Top header ================= */
+
+.top-header {
+    margin: 0 100px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.top-header h1 {
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 65px;
+}
+.top-header img {
+    width: 50%;
+}
+
+.top-icon {
+    color: #4244E5;
+    font-size: 30px;
+}
+.top-p-div {
+    display: flex;
+    gap: 45px;
+    margin-top: 24px;
+    
+}
+.top-p-div p{
+    display: flex;
+    gap: 15px;
+    color: #4244E5;
+
+}
