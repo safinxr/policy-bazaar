@@ -95,12 +95,13 @@ nav {
 
 }
 
-.card{
+.card {
     width: 138px;
     height: 82px;
     background-color: #F2F7FF;
     border-radius: 7px;
 }
+
 .card p {
     text-align: center;
     font-size: 9px;
@@ -117,8 +118,65 @@ nav {
     margin: 14px auto;
 }
 
+
+.btn-div {
+    display: flex;
+    justify-content: center;
+}
+
+.view-all-btn {
+    padding: 12px 25px;
+    border-radius: 20px;
+    border: 1px solid #5f61e9;
+    color: #4244E5;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+/* .popup{
+    width: 1000px;
+    background: rgb(255, 1, 255);
+    border-radius: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 90vh;
+} */
+
+.popup {
+    margin: 100px 100px;
+}
+
+.popup h3 {
+    padding-bottom: 6px;
+    border-bottom: 2px solid #5f61e9;
+}
+
+.grid-box {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+}
+
+.card2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+.grid-box img {
+    width: 50px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+.grid-box p {
+    text-align: center;
+}
+
 /* ==============slider-section=========== */
-.slider-section{
+.slider-section {
     margin: 40px 0;
     background-color: #F2F7FF;
     padding: 40px 0px;
