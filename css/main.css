@@ -116,3 +116,11 @@ nav {
     display: flex;
     margin: 14px auto;
 }
+
+/* ==============slider-section=========== */
+.slider-section{
+    background-color: #F2F7FF;
+    padding: 40px 0px;
+    display: flex;
+    justify-content: center;
+}
