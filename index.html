@@ -133,7 +133,7 @@
         </div>
       </div>
 
-      <div class="popup">
+      <div class="popup" id="popup">
         <!-- ===========Term Insurance========== -->
         <div>
           <h3>Term Insurance</h3>
@@ -169,7 +169,7 @@
           </div>
         </div>
         <!-- ===========Investment Plans========== -->
-        <div style="margin-top: 20px;">
+        <div style="margin-top: 20px">
           <h3>Investment Plans</h3>
           <div class="grid-box">
             <div class="card2">
@@ -207,7 +207,7 @@
           </div>
         </div>
         <!-- ===========Health Insurance========== -->
-        <div style="margin-top: 20px;">
+        <div style="margin-top: 20px">
           <h3>Health Insurance</h3>
           <div class="grid-box">
             <div class="card2">
@@ -232,35 +232,29 @@
             </div>
           </div>
         </div>
-         <!-- ===========Other Plans========== -->
-        <div style="margin-top: 20px;">
+        <!-- ===========Other Plans========== -->
+        <div style="margin-top: 20px">
           <h3>Other Plans</h3>
           <div class="grid-box">
             <div class="card2">
               <img src="icon/CarInsurance.png" alt="" />
-              <p>Car
-Insurance</p>
+              <p>Car Insurance</p>
             </div>
             <div class="card2">
               <img src="icon/WheelerInsurance.png" alt="" />
-              <p>2 Wheeler
-Insurance</p>
+              <p>2 Wheeler Insurance</p>
             </div>
             <div class="card2">
               <img src="icon/TravelInsurance.png" alt="" />
-              <p>
-Travel
-Insurance</p>
+              <p>Travel Insurance</p>
             </div>
             <div class="card2">
               <img src="icon/PetInsurance.png" alt="" />
-              <p>Pet
-Insurance</p>
+              <p>Pet Insurance</p>
             </div>
             <div class="card2">
               <img src="icon/HomeInsurance.png" alt="" />
-              <p>Home
-Insurance</p>
+              <p>Home Insurance</p>
             </div>
             <div class="card2">
               <img src="icon/CancerInsurance.png" alt="" />
@@ -268,8 +262,7 @@ Insurance</p>
             </div>
             <div class="card2">
               <img src="icon/TaxiInsurance.png" alt="" />
-              <p>Taxi
-Insurance</p>
+              <p>Taxi Insurance</p>
             </div>
             <div class="card2">
               <img src="icon/Corporate insurance.png" alt="" />
@@ -277,10 +270,83 @@ Insurance</p>
             </div>
           </div>
         </div>
+        <!-- ===========Marine & Property Insurance========== -->
+        <div style="margin-top: 20px">
+          <h3>Marine & Property Insurance</h3>
+          <div class="grid-box">
+            <div class="card2">
+              <img src="icon/Marine Insurance.png" alt="" />
+              <p>Marine Insurance</p>
+            </div>
+            <div class="card2">
+              <img src="icon/Fire & Burglary.png" alt="" />
+              <p>Fire & Burglary</p>
+            </div>
+            <div class="card2">
+              <img src="icon/Shop Owner Insurance.png" alt="" />
+              <p>Shop Owner Insurance</p>
+            </div>
+            <div class="card2">
+              <img src="icon/Office Package Policy.png" alt="" />
+              <p>Office Package Policy</p>
+            </div>
+          </div>
+        </div>
+        <!-- ===========Marine & Property Insurance========== -->
+        <div style="margin-top: 20px">
+          <h3>Liability</h3>
+          <div class="grid-box">
+            <div class="card2">
+              <img src="icon/Professional Indemnity for Doctors.png" alt="" />
+              <p>Professional Indemnity for Doctors</p>
+            </div>
+            <div class="card2">
+              <img src="icon/Professional Indemnity for Companies.png" alt="" />
+              <p>Professional Indemnity for Companies</p>
+            </div>
+            <div class="card2">
+              <img src="icon/Workmen Compensation.png" alt="" />
+              <p>Workmen Compensation</p>
+            </div>
+            <div class="card2">
+              <img src="icon/General Liability.png" alt="" />
+              <p>General Liability</p>
+            </div>
+            <div class="card2">
+              <img src="icon/Cyber Insurance.png" alt="" />
+              <p>Cyber Insurance</p>
+            </div>
+            <div class="card2">
+              <img src="icon/Directors & Officers Liability.png" alt="" />
+              <p>Directors & Officers Liability</p>
+            </div>
+          </div>
+        </div>
+        <!-- ===========Engineering========== -->
+        <div style="margin-top: 20px">
+          <h3>Engineering</h3>
+          <div class="grid-box">
+            <div class="card2">
+              <img src="icon/Contractor's All Risk.png" alt="" />
+              <p>Contractor's All Risk</p>
+            </div>
+            <div class="card2">
+              <img src="icon/Erection All Risk.png" alt="" />
+              <p>Erection All Risk</p>
+            </div>
+            <div class="card2">
+              <img src="icon/Contractor's Plant & Machinery.png" alt="" />
+              <p>Contractor's Plant & Machinery</p>
+            </div>
+          </div>
+        </div>
       </div>
 
-      <div class="btn-div">
-        <button class="view-all-btn">View all products</button>
+      <div class="btn-div-on" id="on-btn">
+        <button onclick="popupBtn()" class="view-all-btn">View all products</button>
+      </div>
+      <div class="btn-div-off" id="off-btn">
+        <button onclick="popupBtnOff()" class="view-all-btn">view less products</button>
       </div>
     </header>
 
@@ -346,7 +412,7 @@ Insurance</p>
       </section>
 
       <!-- ===============Have a question============= -->
-      <section style="margin: 100px; display: flex;">
+      <section style="margin: 100px; display: flex">
         <div>
           <h2 style="font-size: 30px; font-weight: 500">
             Have a question? <br />
@@ -410,7 +476,7 @@ Insurance</p>
             </div>
           </div>
         </div>
-        <img src="image/img7.png" alt="">
+        <img src="image/img7.png" alt="" />
       </section>
     </main>
 
@@ -436,5 +502,30 @@ Insurance</p>
         </div>
       </div>
     </footer>
+
+    <script>
+      let popup = document.getElementById("popup")
+      let onBtn = document.getElementById("on-btn")
+      let offBtn = document.getElementById("off-btn")
+
+      function popupBtn(){
+        popup.classList.add("btn-on")
+        onBtn.classList.remove("btn-div-on")
+        onBtn.classList.add("btn-div-off")
+        offBtn.classList.remove("btn-div-off")
+        offBtn.classList.add("btn-div-on")
+
+
+
+      }
+      function popupBtnOff(){
+        popup.classList.remove("btn-on")
+        offBtn.classList.remove("btn-div-on")
+        offBtn.classList.add("btn-div-off")
+        onBtn.classList.add("btn-div-on")
+        onBtn.classList.remove("btn-div-off")
+
+      }
+    </script>
   </body>
 </html>

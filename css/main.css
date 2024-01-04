@@ -119,10 +119,17 @@ nav {
 }
 
 
-.btn-div {
+.btn-div-on {
     display: flex;
     justify-content: center;
 }
+.btn-div-off {
+    display: flex;
+    justify-content: center;
+    display: none;
+}
+
+
 
 .view-all-btn {
     padding: 12px 25px;
@@ -146,6 +153,7 @@ nav {
 
 .popup {
     margin: 100px 100px;
+    display: none;
 }
 
 .popup h3 {
@@ -155,7 +163,7 @@ nav {
 
 .grid-box {
     display: grid;
-    grid-template-columns: repeat(7, 1fr);
+    grid-template-columns: repeat(8, 1fr);
     gap: 10px;
 }
 
@@ -173,6 +181,10 @@ nav {
 }
 .grid-box p {
     text-align: center;
+}
+
+.btn-on{
+    display: block;
 }
 
 /* ==============slider-section=========== */
