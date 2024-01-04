@@ -119,6 +119,7 @@ nav {
 
 /* ==============slider-section=========== */
 .slider-section{
+    margin: 40px 0;
     background-color: #F2F7FF;
     padding: 40px 0px;
     display: flex;
