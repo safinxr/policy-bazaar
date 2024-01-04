@@ -51,7 +51,7 @@ nav {
 .top-header {
     margin: 0 100px;
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     align-items: center;
     margin-top: 20px;
 }
@@ -61,6 +61,7 @@ nav {
     font-weight: 700;
     line-height: 65px;
 }
+
 .top-header img {
     width: 50%;
 }
@@ -69,15 +70,49 @@ nav {
     color: #4244E5;
     font-size: 30px;
 }
+
 .top-p-div {
     display: flex;
     gap: 45px;
     margin-top: 24px;
-    
+
 }
-.top-p-div p{
+
+.top-p-div p {
     display: flex;
     gap: 15px;
     color: #4244E5;
 
+}
+
+/* ==========insurance-plans========= */
+
+.insurance-plans {
+    margin: 50px 100px;
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+.card{
+    width: 138px;
+    height: 82px;
+    background-color: #F2F7FF;
+    border-radius: 7px;
+}
+.card p {
+    text-align: center;
+    font-size: 9px;
+    background-color: #5f61e9;
+    color: white;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 1px 0;
+}
+
+.insurance-plans-card .card img {
+    width: 35px;
+    display: flex;
+    margin: 14px auto;
 }
